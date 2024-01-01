@@ -166,7 +166,7 @@ namespace WinLocker
                 using (RegistryKey reg = Registry.CurrentUser.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"))
                 {
                     if (enable)
-                        reg.SetValue("WinLocker", Application.ExecutablePath);
+                        reg.SetValue("WinLocker", $"\"{Application.ExecutablePath}\" --lock");
                     else
                         reg.DeleteValue("WinLocker");
                 }

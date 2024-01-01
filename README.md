@@ -2,9 +2,9 @@
 Windows Desktop Locker.
 
 # Features
-* Monitoring running programs.
-* ~~Closing the taskbar when opening the locker.~~
-* ~~Reopening the locker after system restart.~~
+* Monitoring running programs while the screen is locked.
+* ~~Closing the taskbar when the screen is locked.~~
+* Enabling startup when the screen is locked.
 * Disabling **CTRL+ALT+DEL**  (optional):
     * Disable Lock
     * Disable Switch User

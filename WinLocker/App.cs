@@ -9,6 +9,9 @@
         public App(string[] args)
         {
             InitializeComponent();
+
+            if (args.Length > 0 && args[0] == "--lock")
+                Locker(this, new EventArgs());
         }
 
         private void InitializeComponent()

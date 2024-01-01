@@ -23,6 +23,7 @@ namespace WinLocker
         private void frmLocker_Load(object sender, EventArgs e)
         {
             Win32.SetWndowHandle(this.Handle);
+            Registries.EnableStartup(true);
             //Explorer.Stop();
             Monitor.Start();
             _keyboardHook.KeyDown += Hook_KeyDown;
@@ -61,6 +62,7 @@ namespace WinLocker
             {
                 Monitor.Stop();
                 //Explorer.Start();
+                Registries.EnableStartup(false);
                 this.Close();
             }
             else
